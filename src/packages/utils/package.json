@@ -1,0 +1,42 @@
+{
+  "name": "@repo/utils",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./protected-route": "./src/protected-route/index.tsx",
+    "./provider": "./src/provider/AuthProvider.tsx",
+    "./actionLogTrack": "./src/actionLogTrack.ts",
+    "./debounce": "./src/debounce.ts",
+    "./firebase-config": "./src/firebase.config.ts",
+    "./apiClient": "./src/apiClient.ts",
+    "./throttle": "./src/throttle.ts",
+    "./apiClientBid": "./src/apiClientBid.ts",
+    "./themeProvider": "./src/themeProvider.ts",
+    "./actionLogs": "./src/actionLogs.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "generate:component": "turbo gen react-component"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@turbo/gen": "^1.12.4",
+    "@types/eslint": "^8.56.5",
+    "@types/node": "^20.11.24",
+    "@types/qs": "^6.9.15",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "eslint": "^8.57.0",
+    "react": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.7",
+    "axios": "^1.6.8",
+    "firebase": "^10.12.2",
+    "react-toastify": "^10.0.5"
+  }
+}

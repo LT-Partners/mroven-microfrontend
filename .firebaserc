@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "ltp-analytics-client"
+  },
+  "targets": {
+    "ltp-analytics-client": {
+      "hosting": {
+        "microfrontend-mroven": ["microfrontend-mroven"]
+      }
+    }
+  }
+}

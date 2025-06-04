@@ -1,0 +1,130 @@
+.item {
+  padding-top: 15px;
+  overflow: scroll;
+  padding-bottom: 15px;
+  // white-space: nowrap;
+  display: flex;
+  align-items: center;
+
+  .brick {
+    display: inline-block;
+    width: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 3px;
+    vertical-align: middle;
+    border-radius: 100px;
+  }
+
+  .img {
+    padding-left: 20px;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .spacer {
+    cursor: pointer;
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.selected {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  // white-space: nowrap;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+
+  .brick {
+    display: inline-block;
+    width: 3px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 3px;
+    background-color: #16306d;
+    vertical-align: middle;
+    border-radius: 100px;
+  }
+
+  .img {
+    padding-left: 20px;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #16306d;
+  }
+
+  .spacer {
+    padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #16306d;
+  }
+}
+
+.item::-webkit-scrollbar,
+.selected::-webkit-scrollbar {
+  display: none;
+}
+
+//main-item CSS
+
+.main-item {
+  padding: 20px 0 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+
+  .img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .spacer {
+    cursor: pointer;
+
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+.selected-item {
+  padding: 20px 0 20px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-left: 5px solid #16306d;
+
+  .img {
+    display: inline-block;
+    vertical-align: middle;
+    color: #16306d;
+  }
+
+  .spacer {
+    // padding-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #16306d;
+    text-align: center;
+  }
+}

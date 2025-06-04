@@ -1,0 +1,152 @@
+.admins {
+    .head {
+      display: flex;
+      justify-content: flex-start;
+  
+      .head-txt {
+        padding: 30px 50px;
+        padding-right: 0px;
+        font-size: 1.9rem;
+        font-weight: 500;
+        display: inline-block;
+      }
+  
+      .head-refresh {
+        padding-top: 45px;
+        color: #16306D;
+        padding-left: 5px;
+        font-size: 17px;
+        cursor: pointer;
+      }
+      .btn-control-link {
+        font-family: Montserrat, sans-serif;
+        margin-left: auto;
+        margin-right: 30px;
+      }
+      .add-user-btn {
+        font-family: "Montserrat", sans-serif;
+        display: inline-block;
+        margin-left: 10px;
+        // margin-right: 10px;
+  
+        .add-user-content {
+          background-color: #16306D;
+          color: white;
+          padding: 0px 30px;
+          border-radius: 5px;
+  
+          .add-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+  
+          .add-text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0.7rem;
+          }
+        }
+      }
+      .add-brand-btn {
+        font-family: "Montserrat", sans-serif;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+  
+        .add-brand-content {
+          background-color: #16306D;
+          color: white;
+          padding: 0px 30px;
+          border-radius: 5px;
+  
+          .add-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+  
+          .add-text {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  
+    .toggle-div {
+      display: flex;
+      justify-content: flex-start;
+  
+      .toggle-content {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 40px;
+        cursor: pointer;
+  
+        .selected-toggle-text {
+          font-weight: 600;
+        }
+  
+        .selected-toggle-bar {
+          height: 3px;
+          background-color: #16306D;
+          border-radius: 50px;
+        }
+      }
+  
+      .input-container {
+        margin-left: auto;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        width: 300px;
+        border-radius: 100px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 10px 1px rgb(241, 241, 241);
+  
+        .icon {
+          height: 20px;
+          color: #8c8c8c;
+          min-width: 50px;
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+        }
+  
+        .input-field {
+          font-family: "Montserrat", sans-serif;
+          width: 100%;
+          padding: 10px;
+          height: 20px;
+          border: none;
+          border-bottom-right-radius: 100px;
+          border-top-right-radius: 100px;
+  padding-left: 0;
+          &:active {
+            border: none;
+            outline: none;
+          }
+  
+          &:focus {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+  
+      .search-field {
+        margin-left: auto;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+        border-radius: 100px;
+      }
+    }
+  
+    
+  }
+  

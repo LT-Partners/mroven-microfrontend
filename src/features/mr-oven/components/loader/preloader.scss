@@ -1,0 +1,23 @@
+.preloader {
+  height: 100%;
+  //   height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  // top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1200+1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  overflow: hidden !important;
+}
+
+.puff-loader-preloader {
+  span {
+    border: 8px solid #16306D !important;
+    color: #16306D
+  }
+}
