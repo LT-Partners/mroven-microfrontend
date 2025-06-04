@@ -3,7 +3,7 @@ import * as qs from 'qs';
 import { authFirebase } from './firebase.config';
 
 const apiClient = axios.create({
-  baseURL: "https://api.dev.lift.newengen.com/dev",
+  baseURL: process.env.VITE_BASEURL,
   headers: {
     'Content-Type': 'application/json',
     'x-skip-auth-end':'dev'
