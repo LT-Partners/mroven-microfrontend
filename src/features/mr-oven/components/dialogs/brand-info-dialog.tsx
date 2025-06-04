@@ -1,5 +1,4 @@
-"use client";
-
+import React from "react";
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import apiClient from "../../../../packages/utils/src/apiClient";

@@ -8,7 +8,7 @@ interface AppProps {
 }
 
 const App: React.FC<AppProps> = ({ isActive }) => {
-  console.log(isActive,'isActive');
+  console.log(isActive,process.env.API_URL,'isActive');
   const useHash = !isActive
   
 

@@ -1,5 +1,4 @@
-"use client";
-
+import React from "react";
 import { Dialog, DialogTitle, DialogContent, IconButton } from "@mui/material";
 import { X } from "lucide-react";
 import VideoCard from "../video-card";

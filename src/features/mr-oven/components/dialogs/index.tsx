@@ -1,3 +1,4 @@
+import React from "react";
 import BenefitFocusedDialog from './benifit';
 import CompetitorBashingDialog from './competitor-bash';
 import DonutClassicDialog from './donut-digital-classic';

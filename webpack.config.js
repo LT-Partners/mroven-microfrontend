@@ -100,17 +100,10 @@ module.exports = (env) => {
     },
     plugins: [
       new webpack.DefinePlugin({
-        'process.env': {
-          APP_NAME: JSON.stringify(buildConfig.APP_NAME),
-          VERSION: JSON.stringify(buildConfig.VERSION),
-          BUILD_TIME: JSON.stringify(buildConfig.BUILD_TIME),
-          API_URL: JSON.stringify(buildConfig.API_URL),
-          ENABLE_MOCK_API: JSON.stringify(buildConfig.ENABLE_MOCK_API),
-          ENABLE_NEW_UI: JSON.stringify(buildConfig.ENABLE_NEW_UI),
-          ENABLE_ANALYTICS: JSON.stringify(buildConfig.ENABLE_ANALYTICS),
-          DEBUG: JSON.stringify(buildConfig.DEBUG),
-          LOG_LEVEL: JSON.stringify(buildConfig.LOG_LEVEL),
-        }
+        'process.env': Object.keys(buildConfig).reduce((prev, next) => {
+          prev[next] = JSON.stringify(buildConfig[next]);
+          return prev;
+        }, {}),
       }),
       new HtmlWebpackPlugin({
         template: './public/index.html',

@@ -1,15 +1,11 @@
-"use client";
-
-import type React from "react";
-
-import { useState } from "react";
+import React from "react";
 import ReactPlayer from "react-player";
 import { Check, Play, Info } from "lucide-react";
 import { Button } from "../../../components/ui/button";
 import { cn } from "../../../lib/utils";
 import { TranscriptDialog } from "./dialogs/transcript-dialog";
 import { Dialog, DialogContent, DialogTitle } from "../../../components/ui/dialog";
-
+import { useState } from "react";
 // Define the color rotation array for brands
 const BRAND_COLORS = [
   { bg: "#F7CDAF", text: "#FF7056", border: "#FF7056" },

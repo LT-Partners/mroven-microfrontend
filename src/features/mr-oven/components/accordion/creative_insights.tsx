@@ -385,6 +385,8 @@ const CreativeInsightsAccordion = () => {
       }));
 
       const user = authFirebase.currentUser;
+      
+      
       let authHeader = {};
 
       if (user) {

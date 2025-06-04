@@ -1,3 +1,4 @@
+import React from "react";
 import './preloader.scss';
 import { PuffLoader } from 'react-spinners';
 
